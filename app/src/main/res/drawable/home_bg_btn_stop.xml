@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--/* Group 8
+    *  Name: ISH, T00702113
+    *  ShiftMate: Shift Tracker App
+    * */-->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <gradient
+        android:startColor="#EF5350"
+        android:endColor="#C62828"
+        android:angle="45" />
+
+    <stroke
+        android:width="5dp"
+        android:color="#B71C1C" />
+
+    <corners android:radius="15dp" />
+
+</shape>

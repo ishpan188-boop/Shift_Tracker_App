@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--/* Group 8
+    *  Name: MUSTAFA, T00737910
+    *  ShiftMate: Shift Tracker App
+    * */-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:paddingBottom="100dp"
+        android:gravity="top|center_horizontal"
+        android:background="#DBC9FA">
+
+
+        <TextView
+            android:id="@+id/txtProfileHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile Settings"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp" />
+
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_profile"
+            android:background="@drawable/profile_circle_bg"
+            android:padding="10dp"
+            android:layout_marginBottom="24dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/login_card_bg"
+            android:padding="20dp"
+            android:elevation="4dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Employee Information"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textSize="15sp"
+                android:paddingVertical="4dp" />
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textSize="15sp"
+                android:paddingVertical="4dp" />
+
+            <TextView
+                android:id="@+id/txtRole"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Role:"
+                android:textSize="15sp"
+                android:paddingVertical="4dp"
+                android:layout_marginBottom="12dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"
+                android:layout_marginBottom="12dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wage Settings"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                android:layout_marginBottom="12dp"
+                app:cardBackgroundColor="#F8F9FA">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Current Hourly Rate"
+                        android:textSize="13sp"
+                        android:textColor="#6C757D"
+                        android:layout_marginBottom="4dp" />
+
+                    <TextView
+                        android:id="@+id/hourly_rate_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$17.85 per hour"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#2D3436"
+                        android:layout_marginBottom="12dp" />
+
+                    <Button
+                        android:id="@+id/change_rate_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Change Hourly Rate"
+                        android:textAllCaps="false"
+                        android:textSize="14sp"
+                        android:backgroundTint="#7C3AED"
+                        android:textColor="@android:color/white"
+                        android:padding="12dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"
+                android:layout_marginVertical="12dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account Settings"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etProfileUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:padding="12dp"
+                android:inputType="textPersonName"
+                android:layout_marginTop="2dp" />
+
+            <EditText
+                android:id="@+id/etProfilePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:padding="12dp"
+                android:inputType="textPassword"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="12dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"
+                android:layout_marginBottom="12dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Work Details"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone number"
+                android:inputType="phone"
+                android:padding="12dp"
+                android:layout_marginTop="4dp" />
+
+            <EditText
+                android:id="@+id/etHoursLimit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Weekly hours limit"
+                android:inputType="numberDecimal"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"
+                android:layout_marginBottom="12dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data Management"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clear all your shift history and earnings data."
+                android:textSize="13sp"
+                android:textColor="#6C757D"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/clear_data_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clear All Data"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:backgroundTint="#DC3545"
+                android:textColor="@android:color/white"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btnSaveProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Save Changes"
+                    android:textAllCaps="false"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="#7C3AED"
+                    android:padding="12dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="12dp" />
+
+                <Button
+                    android:id="@+id/btnLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Out"
+                    android:textAllCaps="false"
+                    android:textSize="14sp"
+                    android:backgroundTint="#E5D6FF"
+                    android:textColor="#5B21B6"
+                    android:padding="12dp"
+                    android:layout_marginBottom="4dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shift Tracker App v1.0"
+            android:textSize="12sp"
+            android:textColor="#6C757D"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+
+</ScrollView>

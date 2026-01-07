@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--* Group 8
+    *  Name(s): RENIL, ISH, & MUSTAFA
+    *  ShiftMate: Shift Tracker App
+    * */-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F6FA"
+    tools:context=".main.MainActivity"
+    android:theme="@style/Theme.App.Starting"
+    >
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tab_layout"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+
+        android:background="@drawable/main_bg_tab_layout"
+        android:elevation="10dp"
+
+        app:tabIndicatorHeight="0dp"
+        app:tabRippleColor="#206C5CE7"
+
+        app:tabIconTint="@drawable/main_tab_icon_colors"
+        app:tabTextColor="@drawable/main_tab_icon_colors"
+
+        app:tabSelectedTextColor="#6C5CE7"
+
+        app:tabGravity="fill"
+        app:tabMode="fixed" />
+
+</RelativeLayout>

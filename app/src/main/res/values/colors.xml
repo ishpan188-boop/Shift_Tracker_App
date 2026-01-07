@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--/* Group 8
+     * Name(s): RENIL, ISH, MUSTAFA
+     * ShiftMate: Shift Tracker App
+     * */-->
+
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name='ChineseS'>#CDCDCD</color>
+    <color name='FlashW'>#EFF8F3</color>
+    <color name="splash_background_color">#1A1A1A</color>
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_background_color</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/app_icon</item>
+        <item name="android:statusBarColor">@color/splash_background_color</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="postSplashScreenTheme">@style/Theme.FinalShiftTrackerApp</item>
+    </style>
+
+</resources>
